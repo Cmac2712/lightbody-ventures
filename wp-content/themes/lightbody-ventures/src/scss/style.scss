@@ -273,12 +273,12 @@ body .owl-theme .owl-dots .owl-dot.active span {
 }
 
 .scroll-down:hover:after {
+	left: -5px;
 	border-top:   	 $base-spacing-unit * 1.75 solid $brand-color-light;
 	border-left:  	 $base-spacing-unit * 1.75 solid transparent;
 	border-right: 	 $base-spacing-unit * 1.75 solid transparent;
 	transition: all .25s ease;
 }
-
 
 .hamburger {
 	padding: 15px 15px;
@@ -406,6 +406,7 @@ body .owl-theme .owl-dots .owl-dot.active span {
 	margin-bottom: $base-spacing-unit * 2;
 	overflow: hidden;
 	height: calc(100vh - 117px);
+	background-size: cover;
 }
 
 .hero__title {

@@ -1,4 +1,6 @@
-<div class="hero">
+<?php $backgroung_image = get_field('background_image'); ?>
+
+<div class="hero" style="background-image: url(<?php echo $backgroung_image['url']; ?>);">
 	<div class="wrapper wrapper--hero">
 		<h1 class="hero__title"><?php the_field('banner_title'); ?></h1>
 		<p class="hero__desc"><?php the_field('banner_description'); ?></p>

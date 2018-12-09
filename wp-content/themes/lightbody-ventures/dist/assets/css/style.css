@@ -196,6 +196,7 @@ body .owl-theme .owl-dots .owl-dot.active span {
   transition: all .25s ease; }
 
 .scroll-down:hover:after {
+  left: -5px;
   border-top: 42px solid #a33a7c;
   border-left: 42px solid transparent;
   border-right: 42px solid transparent;
@@ -302,7 +303,8 @@ body .owl-theme .owl-dots .owl-dot.active span {
   padding-bottom: 72px;
   margin-bottom: 48px;
   overflow: hidden;
-  height: calc(100vh - 117px); }
+  height: calc(100vh - 117px);
+  background-size: cover; }
 
 .hero__title {
   font-weight: 600;
