@@ -481,7 +481,7 @@ body .owl-theme .owl-dots .owl-dot.active span {
 
 .work-item {
 	position: relative;
-	padding-bottom: 33%;
+	padding-bottom: 50%;
 	background-color: #ddd;
 	flex-basis: 100%;
 	margin-bottom: 2%;
@@ -490,6 +490,7 @@ body .owl-theme .owl-dots .owl-dot.active span {
 
 	@media screen and (min-width: $lap) {
 		flex-basis: 49%;
+		padding-bottom: 33%;
 	}
 }
 
@@ -697,7 +698,11 @@ nav.main-nav.main-nav--mobile {
 }
 
 .contact-cta .button {
-	padding: 0 $base-spacing-unit * 2.5;
+	padding: $base-spacing-unit $base-spacing-unit * 2.5;
+
+	@media screen and (min-width: $desk) {
+		padding: 0 $base-spacing-unit * 2.5;
+	}
 }
 
 .main-footer__container .company-address {
@@ -810,6 +815,10 @@ body {
 	display: flex;
 	background-color: $shade;
 	//background-image: linear-gradient(to right, $shade 50%, $brand-color 50%, $brand-color 100%);
+}
+
+.page-template-services-template .hero {
+	margin-bottom: 0;
 }
 
 .service-item {

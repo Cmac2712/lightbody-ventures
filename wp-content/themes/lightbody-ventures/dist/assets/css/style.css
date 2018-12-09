@@ -361,7 +361,7 @@ body .owl-theme .owl-dots .owl-dot.active span {
 
 .work-item {
   position: relative;
-  padding-bottom: 33%;
+  padding-bottom: 50%;
   background-color: #ddd;
   flex-basis: 100%;
   margin-bottom: 2%;
@@ -369,7 +369,8 @@ body .owl-theme .owl-dots .owl-dot.active span {
   background-size: cover; }
   @media screen and (min-width: 768px) {
     .work-item {
-      flex-basis: 49%; } }
+      flex-basis: 49%;
+      padding-bottom: 33%; } }
 
 @media screen and (min-width: 768px) {
   .work-item:nth-child(3),
@@ -520,7 +521,10 @@ nav.main-nav.main-nav--mobile {
   margin: 0; }
 
 .contact-cta .button {
-  padding: 0 60px; }
+  padding: 24px 60px; }
+  @media screen and (min-width: 1024px) {
+    .contact-cta .button {
+      padding: 0 60px; } }
 
 .main-footer__container .company-address {
   font-size: 24px;
@@ -609,6 +613,9 @@ body {
 .services {
   display: flex;
   background-color: #e3e3e3; }
+
+.page-template-services-template .hero {
+  margin-bottom: 0; }
 
 .service-item {
   display: flex;
