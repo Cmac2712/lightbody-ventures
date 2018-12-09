@@ -105,6 +105,9 @@ a.button,
   background-color: #a33a7c; }
 
 /** COMPONENTS */
+.owl-carousel {
+  height: 100%; }
+
 body .owl-theme .owl-dots .owl-dot:hover span,
 body .owl-theme .owl-dots .owl-dot span {
   background: #fff;
@@ -267,7 +270,7 @@ body .owl-theme .owl-dots .owl-dot.active span {
 
 .hero {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   align-items: center;
   background-color: #68123d;
   color: #fff;

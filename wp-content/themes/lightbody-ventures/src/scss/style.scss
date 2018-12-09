@@ -160,6 +160,11 @@ a.button,
 /** COMPONENTS */
 
 // Owl Carousel
+
+.owl-carousel {
+	height: 100%;
+}
+
 body .owl-theme .owl-dots .owl-dot:hover span, 
 body .owl-theme .owl-dots .owl-dot span {
 	background: #fff;
@@ -365,7 +370,7 @@ body .owl-theme .owl-dots .owl-dot.active span {
 
 .hero {
 	display: flex;
-	flex-wrap: wrap;
+	flex-direction: column;
 	align-items: center;
 	background-color: $brand-color;
 	color: #fff;
