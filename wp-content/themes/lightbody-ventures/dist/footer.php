@@ -84,6 +84,19 @@
 		logoCarousel.owlCarousel(owlOptions)
 	}
 
+	// Scroll to next section
+	if ($('.scroll-down').length) {
+		$('.scroll-down').on('click', function(e) {
+			e.preventDefault();
+			var target = $(this).parent().next().offset().top;
+			console.log(target);
+
+			$('html, body').animate({
+				scrollTop: target 
+			}, 1000);
+		});
+	}
+
 })(jQuery);
 
 

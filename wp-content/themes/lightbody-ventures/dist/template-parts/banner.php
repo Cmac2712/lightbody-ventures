@@ -5,18 +5,20 @@
 	</div>
 
 
-<ul id="logos" class="owl-carousel owl-theme logos-carousel">
-<?php if( have_rows('carousel_images') ): ?>
+	<?php if( have_rows('carousel_images') ): ?>
+	<ul id="logos" class="owl-carousel owl-theme logos-carousel">
 
-	<?php while( have_rows('carousel_images') ): the_row(); ?>
+		<?php while( have_rows('carousel_images') ): the_row(); ?>
 
-	<?php $image = get_sub_field('image'); ?>
+		<?php $image = get_sub_field('image'); ?>
 
-	<li style="background-image: url(<?php echo $image['url']; ?>);"></li>
+		<li style="background-image: url(<?php echo $image['url']; ?>);"></li>
 
-	<?php endwhile; ?>
+		<?php endwhile; ?>
 
-<?php endif; ?>
-</ul>
+	</ul>
+	<?php endif; ?>
+
+	<a href="#" class="scroll-down"></a>
 			
 </div>

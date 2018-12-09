@@ -118,6 +118,7 @@ body .owl-theme .owl-dots .owl-dot.active span {
   list-style-type: none;
   margin: 0;
   margin-top: 72px;
+  margin-bottom: 72px;
   padding: 0 24px;
   overflow: hidden; }
   @media screen and (min-width: 1024px) {
@@ -148,6 +149,31 @@ body .owl-theme .owl-dots .owl-dot.active span {
   @media screen and (min-width: 768px) {
     .menu-button.hamburger {
       display: none !important; } }
+
+.scroll-down {
+  display: block;
+  flex-basis: 100%;
+  position: relative;
+  margin: auto;
+  height: 36px;
+  width: 36px; }
+
+.scroll-down:after {
+  position: absolute;
+  content: "";
+  height: 0;
+  width: 0;
+  border-top: 36px solid #fff;
+  border-left: 36px solid transparent;
+  border-right: 36px solid transparent;
+  transition: all .25s ease; }
+
+.scroll-down:hover:after {
+  margin-left: -5px;
+  border-top: 42px solid #a33a7c;
+  border-left: 42px solid transparent;
+  border-right: 42px solid transparent;
+  transition: all .25s ease; }
 
 .hamburger {
   padding: 15px 15px;
@@ -240,12 +266,17 @@ body .owl-theme .owl-dots .owl-dot.active span {
   justify-content: space-between; }
 
 .hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   background-color: #68123d;
   color: #fff;
   text-align: center;
   padding-top: 72px;
   padding-bottom: 72px;
-  margin-bottom: 48px; }
+  margin-bottom: 48px;
+  overflow: hidden;
+  height: calc(100vh - 117px); }
 
 .hero__title {
   font-weight: 600;
@@ -253,14 +284,14 @@ body .owl-theme .owl-dots .owl-dot.active span {
   max-width: 800px;
   margin: 0 auto;
   margin-bottom: 48px;
-  font-size: 48px; }
+  font-size: 36px; }
 
 .hero__desc {
   margin-bottom: 24px;
   max-width: 800px;
   margin: 0 auto;
   margin-bottom: 24px;
-  font-size: 36px; }
+  font-size: 30px; }
 
 .wrapper--hero {
   max-width: 768px; }
