@@ -230,12 +230,17 @@ body .owl-theme .owl-dots .owl-dot.active span {
 	flex-basis: 100%;
 	position: relative;
 	margin: auto;
+	margin-top: auto;
 	height: $base-spacing-unit * 1.5;
-	width: $base-spacing-unit * 1.5;
+	width: $base-spacing-unit * 3;
 }
 
 .scroll-down:after {
 	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
 	content: "";
 	height: 0;
 	width: 0;
@@ -246,7 +251,6 @@ body .owl-theme .owl-dots .owl-dot.active span {
 }
 
 .scroll-down:hover:after {
-	margin-left: -5px;
 	border-top:   	 $base-spacing-unit * 1.75 solid $brand-color-light;
 	border-left:  	 $base-spacing-unit * 1.75 solid transparent;
 	border-right: 	 $base-spacing-unit * 1.75 solid transparent;

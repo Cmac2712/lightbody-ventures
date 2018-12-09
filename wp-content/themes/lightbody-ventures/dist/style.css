@@ -158,11 +158,16 @@ body .owl-theme .owl-dots .owl-dot.active span {
   flex-basis: 100%;
   position: relative;
   margin: auto;
+  margin-top: auto;
   height: 36px;
-  width: 36px; }
+  width: 72px; }
 
 .scroll-down:after {
   position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
   content: "";
   height: 0;
   width: 0;
@@ -172,7 +177,6 @@ body .owl-theme .owl-dots .owl-dot.active span {
   transition: all .25s ease; }
 
 .scroll-down:hover:after {
-  margin-left: -5px;
   border-top: 42px solid #a33a7c;
   border-left: 42px solid transparent;
   border-right: 42px solid transparent;
