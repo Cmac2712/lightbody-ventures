@@ -301,7 +301,6 @@ body .owl-theme .owl-dots .owl-dot.active span {
   text-align: center;
   padding-top: 72px;
   padding-bottom: 72px;
-  margin-bottom: 48px;
   overflow: hidden;
   height: calc(100vh - 117px);
   background-size: cover; }
@@ -312,14 +311,17 @@ body .owl-theme .owl-dots .owl-dot.active span {
   max-width: 800px;
   margin: 0 auto;
   margin-bottom: 48px;
-  font-size: 36px; }
+  font-size: 30px; }
 
 .hero__desc {
   margin-bottom: 24px;
   max-width: 800px;
   margin: 0 auto;
   margin-bottom: 24px;
-  font-size: 30px; }
+  font-size: 24px; }
+
+.home .hero {
+  margin-bottom: 24px; }
 
 .wrapper--hero {
   max-width: 768px; }
@@ -347,6 +349,75 @@ body .owl-theme .owl-dots .owl-dot.active span {
 
 .hero__brands li {
   padding: 24px; }
+
+.partner {
+  background-color: #efefef;
+  text-align: center;
+  padding: 72px 0; }
+
+.partner__title {
+  font-weight: 600; }
+
+.partner__description {
+  margin-bottom: 72px; }
+
+.partner-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0; }
+
+.partner-images li {
+  flex-basis: 23%;
+  background-position: 0;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  margin-bottom: 2%;
+  width: 100px;
+  padding-bottom: 10%; }
+
+.team-images li:before,
+.partner-images li:before {
+  content: none; }
+
+.team-title {
+  text-align: center;
+  margin: 48px 0;
+  font-weight: 500; }
+
+.team-images {
+  display: flex;
+  padding: 0;
+  margin-bottom: 48px; }
+
+.team-member {
+  flex-basis: 33%;
+  padding: 0 24px; }
+
+.member__image {
+  margin: 0 auto;
+  padding: 25%;
+  margin-bottom: 12px;
+  background-size: 100% auto;
+  background-position: 50%; }
+
+.member__title {
+  display: inline-block;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 600; }
+
+.member__title:after {
+  content: "+";
+  position: relative;
+  bottom: -6.4px;
+  right: -6px;
+  font-size: 36px;
+  color: #68123d;
+  line-height: 0; }
+
+.member__title:before {
+  transform: rotate(90deg); }
 
 .work {
   margin-bottom: 48px; }
