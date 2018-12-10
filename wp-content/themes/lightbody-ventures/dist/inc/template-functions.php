@@ -40,6 +40,64 @@ add_action( 'wp_head', 'lightbody_ventures_pingback_header' );
  * Create some custom post types
  */
 
+function footer_post () {
+	register_post_type( 'main_footer', 
+		array(
+			'labels' => array(
+				'name' => __('Footer'), 
+				'singular_name' => __('Product')
+			), 
+			'public' => true, 
+			'has_archive' => true, 
+		)
+   	);
+}
+
+add_action( 'init', 'footer_post' );
+
+function display_custom_footer () {
+
+$args = array(
+	'post_type'=> 'main_footer',
+	'order'    => 'ASC', 
+	'posts_per_page' => 1
+    );              
+
+$string = "";
+
+$the_query = new WP_Query( $args );
+
+
+if($the_query->have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); 
+
+$link = get_field('footer_link');
+
+$string .= '<footer class="main-footer">';
+$string .= '	<div class="wrapper">';
+$string .= '		<div class="main-footer__container">';
+$string .= '			<div class="contact-cta">';
+$string .= '				<div class="contact-cta__text">';
+$string .= 					'<p>' . get_field('footer_info') . '</p>';
+$string .= '				</div>';
+$string .= '				<a href="'. $link . '" class="button button--light button--large contact-cta__button">' . trim( get_field('footer_link_text') ) . '</a>';
+$string .= '			</div>';
+$string .= '			<address class="address company-address">';
+$string .= 				get_field('address');
+$string .= '			</address>';
+$string .= '			<div class="logo logo--footer">';
+$string .= '			<img src="' . get_field('footer_logo')['url'] . '" alt="Lightbody Ventures">';
+$string .= '			</div>';
+$string .= '		</div>';
+$string .= '	</div>';
+$string .= '</footer>';
+
+endwhile;
+endif;
+
+echo $string;
+
+}
+
 function display_button ($atts, $content)
 {
 	$a = shortcode_atts( array(
@@ -64,7 +122,6 @@ function display_service_items()
 	$i = 0;
 
 	$query = new WP_Query( $args );
-
 
 	 if( have_rows('service_item') ):
 

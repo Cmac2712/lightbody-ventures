@@ -732,6 +732,7 @@ nav.main-nav.main-nav--mobile {
 .main-footer__container {
 	display: flex;
 	flex-wrap: wrap;
+	align-items: flex-start;
 	justify-content: center;
 
 	@media screen and (min-width: $desk) {
@@ -741,16 +742,18 @@ nav.main-nav.main-nav--mobile {
 
 .main-footer__container .logo--footer {
 	display: flex;
+	align-self: center;
 	flex-basis: 100%;
 	justify-content: center;
 	margin-left: auto;
 	margin-right: auto;
-	padding-top: $base-spacing-unit;
+	padding-top: $base-spacing-unit * 2;
 }
 
 .main-footer__container .logo--footer img {
+	height: 88.37px;
 	width: 100%;
-	max-width: 800px;
+	max-width: 300px;
 }
 
 .main-footer__container > * {
@@ -789,11 +792,8 @@ nav.main-nav.main-nav--mobile {
 }
 
 .contact-cta .button {
-	padding: $base-spacing-unit $base-spacing-unit * 2.5;
-
-	@media screen and (min-width: $desk) {
-		padding: 0 $base-spacing-unit * 2.5;
-	}
+	display: inline-block;
+	height: 78px;
 }
 
 .main-footer__container .company-address {
