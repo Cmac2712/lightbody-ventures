@@ -4,6 +4,7 @@ function Menu () {
     'panel': document.getElementById('panel'),
     'menu': document.getElementById('mobile-nav'),
     'padding': 256,
+	'touch': false, 
     'tolerance': 70
   });
 
