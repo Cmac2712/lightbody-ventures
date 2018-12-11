@@ -1,3 +1,5 @@
+<?php wp_reset_postdata(); ?>
+
 <?php if ( get_field('title') || get_field('description') || get_field('button_text') ): ?>
 <section class="crosslink">
 	<div class="wrapper">

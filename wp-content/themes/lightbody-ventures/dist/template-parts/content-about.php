@@ -37,31 +37,6 @@
 
 </section>
 
-<section class="team">
-<?php if( have_rows('team_members') ): ?>
-<div class="wrapper">
-
-	<h3 class="team-title"><?php echo get_field('team_title'); ?></h3>
-
-	<ul class="team-images">
-
-		<?php while( have_rows('team_members') ): the_row(); ?>
-
-		<?php $image = get_sub_field('image'); ?>	
-
-		<li class="team-member">
-			<div class="member__image" style="background-image: url(<?php echo $image['url']; ?>);"></div>
-			<div class="member__title">
-				<?php echo get_sub_field('title'); ?>
-			</div>
-		</li>
-
-		<?php endwhile; ?>
-
-	</ul>
-</div>
-<?php endif; ?>
-
-</section>
+<?php echo display_team_members(); ?>
 
 <?php get_template_part('template-parts/outro'); ?>

@@ -514,21 +514,50 @@ body .owl-theme .owl-dots .owl-dot.active span {
 
 .team-images {
 	display: flex;
+	flex-wrap: wrap;
 	padding: 0;
 	margin-bottom: $base-spacing-unit * 2;
 }
 
-.team-member {
-	flex-basis: 33%;
+.team .team-member {
+	flex-basis: 100%;
 	padding: 0 $base-spacing-unit;
+	margin-bottom: 3%;
+
+	@media screen and (min-width: $lap)  {
+		flex-basis: 50%;
+	}
+
+	@media screen and (min-width: $desk)  {
+		flex-basis: 33%;
+	}
+
 }
 
 .member__image {
+	position: relative;
 	margin: 0 auto;
 	padding: 25%;
 	margin-bottom: $base-spacing-unit/2;
 	background-size: 100% auto;
 	background-position: 50%;
+}
+
+.member__image:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: $brand-color;
+	opacity: 0;
+	transition: .25s ease opacity;
+}
+
+.team-member:hover .member__image:after {
+	opacity: .5;
+	transition: .25s ease opacity;
 }
 
 .member__title {
@@ -550,6 +579,56 @@ body .owl-theme .owl-dots .owl-dot.active span {
 
 .member__title:before {
 	transform: rotate(90deg);
+}
+
+// Team Member Page
+
+.hero--about {
+	height: auto;
+	padding: $base-spacing-unit * 2 0;
+}
+
+.hero--about .hero__page-title {
+	margin-bottom: $base-spacing-unit/2;
+	font-size: $gamma-font-size;
+}
+
+.hero--about .hero__title {
+	margin-bottom: 0;
+}
+
+.team-member-profile {
+	background-color: $shade-light;
+	margin-bottom: 0;
+	overflow: auto;
+	padding-top: $base-spacing-unit * 3;
+	text-align: center;
+}
+
+.team-member__image {
+	max-width: 500px;
+	margin: 0 auto;
+	margin-bottom: $base-spacing-unit * 3;
+	padding-bottom: 33%;
+	background-size: cover;
+	background-position: 0;
+}
+
+.team-member__image img {
+	width: 100%;
+}
+
+.team-member__description p {
+	text-align: center;
+	font-size: $gamma-font-size;
+}
+
+.team-member__description p:last-child {
+	margin-bottom: 0;
+}
+
+.team-member-profile .button {
+	margin: $base-spacing-unit * 2 auto;
 }
 
 // Work Item

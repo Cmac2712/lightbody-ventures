@@ -212,3 +212,49 @@ function display_work_posts ($title = '')
 
 	return $string;
 }
+
+function display_team_members()
+{
+
+$args = array(
+	'post_type' => 'page', 
+	'meta_key' => '_wp_page_template', 
+	'meta_value' => 'team-template.php'
+);
+
+$string = '';
+	
+$query = new WP_Query( $args );
+
+if ( $query->have_posts() ) :
+
+
+$string .= '<section id="team" class="team">';
+$string .= '<div class="wrapper">';
+$string .= '	<h3 class="team-title">' . get_field("team_title") . '</h3>';
+$string .= '	<ul class="team-images">';
+
+	while ( $query->have_posts() ) :
+		$query->the_post();
+		$image = get_field("image");
+
+		$string .= '		<li class="team-member">';
+		$string .= '			<a href="' . get_the_permalink() . '" >';
+		$string .= '			    <div class="member__image" style="background-image: url(' . $image['url'] . '"></div>';
+		$string .= '			    <div class="member__title">';
+		$string .=				    get_field("name") . ',<br/>' . get_field("job_title");
+		$string .= '			    </div>';
+		$string .= '			</a>';
+		$string .= '		</li>';
+	endwhile;
+
+$string .= '	</ul>';
+$string .= '</div>';
+
+endif;
+
+$string .= '</section>';
+
+return $string; 
+
+}
