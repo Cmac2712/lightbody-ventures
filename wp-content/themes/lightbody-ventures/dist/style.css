@@ -405,7 +405,7 @@ body .owl-theme .owl-dots .owl-dot.active span {
       flex-basis: 18.75%;
       margin-right: 6.25%; } }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   .partner-images li:nth-child(3n) {
     margin-right: 0; } }
 
@@ -445,7 +445,7 @@ body .owl-theme .owl-dots .owl-dot.active span {
 .member__image {
   position: relative;
   margin: 0 auto;
-  padding: 25%;
+  padding: 33%;
   margin-bottom: 12px;
   background-size: 100% auto;
   background-position: 50%; }

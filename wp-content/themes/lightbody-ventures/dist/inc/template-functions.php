@@ -219,12 +219,15 @@ function display_team_members()
 $args = array(
 	'post_type' => 'page', 
 	'meta_key' => '_wp_page_template', 
-	'meta_value' => 'team-template.php'
+	'meta_value' => 'team-template.php', 
+	'orderby' => 'menu_order', 
+	'order' => 'ASC'
 );
 
 $string = '';
 	
 $query = new WP_Query( $args );
+//$query->set('orderby', 'menu_order'); 
 
 if ( $query->have_posts() ) :
 
@@ -242,7 +245,14 @@ $string .= '	<ul class="team-images">';
 		$string .= '			<a href="' . get_the_permalink() . '" >';
 		$string .= '			    <div class="member__image" style="background-image: url(' . $image['url'] . '"></div>';
 		$string .= '			    <div class="member__title">';
-		$string .=				    get_field("name") . ',<br/>' . get_field("job_title");
+		$string .=				    get_field("name");
+
+		if (get_field("job_title")): 	
+
+			$string .= ',<br/>' . get_field("job_title");
+
+		endif;
+
 		$string .= '			    </div>';
 		$string .= '			</a>';
 		$string .= '		</li>';

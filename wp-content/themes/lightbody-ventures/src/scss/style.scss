@@ -537,7 +537,7 @@ body .owl-theme .owl-dots .owl-dot.active span {
 }
 
 .partner-images li:nth-child(3n) {
-	@media screen and (min-width: $lap) {
+	@media screen and (max-width: $lap) {
 		margin-right: 0;
 	}
 }
@@ -590,7 +590,7 @@ body .owl-theme .owl-dots .owl-dot.active span {
 .member__image {
 	position: relative;
 	margin: 0 auto;
-	padding: 25%;
+	padding: 33%;
 	margin-bottom: $base-spacing-unit/2;
 	background-size: 100% auto;
 	background-position: 50%;
