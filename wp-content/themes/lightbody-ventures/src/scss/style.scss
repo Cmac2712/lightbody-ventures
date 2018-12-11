@@ -738,9 +738,13 @@ body .owl-theme .owl-dots .owl-dot.active span {
 	max-width: 500px;
 	margin: 0 auto;
 	margin-bottom: $base-spacing-unit * 3;
-	padding-bottom: 33%;
+	padding-bottom: 50%;
 	background-size: cover;
-	background-position: 0;
+	background-position: 50%;
+
+	@media screen and (min-width: $lap)  {
+		padding-bottom: 33%;
+	}
 }
 
 .team-member__image img {
