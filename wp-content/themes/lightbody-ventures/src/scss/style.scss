@@ -201,7 +201,7 @@ a.button,
 	position: relative;
 	display: flex;
 	position: relative;
-	top: -$base-spacing-unit * 6.4;
+	top: -$base-spacing-unit * 4;
 	justify-content: space-between;
 	z-index: 9999;
 	font-size: $alpha-font-size;
@@ -532,7 +532,7 @@ body .owl-theme .owl-dots .owl-dot.active span {
 .hero-home__ctas a:nth-child(2) {
 	margin-top: $base-spacing-unit;
 
-	@media screen and (min-width: 519px) {
+	@media screen and (min-width: 455px) {
 		margin-top: 0;
 	}
 }
@@ -1223,7 +1223,11 @@ body {
 
 .service-item__description  {
 	width: 100%;
-	padding: $base-spacing-unit  0 $base-spacing-unit $base-spacing-unit * 3;
+	padding: $base-spacing-unit  0 $base-spacing-unit $base-spacing-unit * 2;
+
+	@media screen and (min-width: $lap) {
+		padding: $base-spacing-unit  0 $base-spacing-unit $base-spacing-unit * 3;
+	}
 }
 
 .service-item__description ul {
