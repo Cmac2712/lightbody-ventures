@@ -1031,6 +1031,10 @@ nav.main-nav.main-nav--mobile {
 	display: inline-block;
 }
 
+.contact textarea {
+	resize: none;
+}
+
 .main-footer__container .company-address {
 	font-size: $gamma-font-size;
 	font-weight: 600;
@@ -1317,6 +1321,12 @@ form.is-active .right *:not(.ajax-loader) {
 	padding-right: $base-spacing-unit * 3;
 	text-transform: uppercase;
 	cursor: pointer;
+}
+
+.contact-form input, 
+.contact-form .ui-selectmenu-button, 
+.contact-form textarea {
+	background-color: lighten($brand-color-light, 5%);
 }
 
 div.wpcf7 .ajax-loader {

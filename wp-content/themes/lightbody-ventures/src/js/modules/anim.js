@@ -4,14 +4,12 @@ import _ from 'lodash'
 
 
 function hoverExpand () {
-	console.log('working');
 
 	$(window).resize(_.debounce(_animate, 500))
 
 	_animate()
 
 	function _animate () {
-		console.log('animate');
 		const $element = $('.hover-expand')
 
 		$element.each(function () {
@@ -27,6 +25,10 @@ function hoverExpand () {
 
 			maskStyler.set({ y: height, x: offset })
 			titleStyler.set({ y: 0, x: ( $container.width() - $title.width() )})
+
+			if ( $(window).width() < 768 ) {
+				return;
+			}
 
 			$(this).hover(() => {
 
@@ -59,7 +61,6 @@ function hoverExpand () {
 		})
 
 	}
-
 
 }
 

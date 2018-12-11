@@ -782,6 +782,9 @@ nav.main-nav.main-nav--mobile {
 .contact-cta .button {
   display: inline-block; }
 
+.contact textarea {
+  resize: none; }
+
 .main-footer__container .company-address {
   font-size: 24px;
   font-weight: 600;
@@ -1010,6 +1013,11 @@ form.is-active .right *:not(.ajax-loader) {
   padding-right: 72px;
   text-transform: uppercase;
   cursor: pointer; }
+
+.contact-form input,
+.contact-form .ui-selectmenu-button,
+.contact-form textarea {
+  background-color: #b6418a; }
 
 div.wpcf7 .ajax-loader {
   position: absolute;
