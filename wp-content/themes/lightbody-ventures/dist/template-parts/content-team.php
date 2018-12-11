@@ -14,7 +14,7 @@
 			<div class="wrapper">
 				<div class="team-member__image" style="background-image: url(<?php echo $image['url']; ?>);"></div>
 				<div class="team-member__description">
-					<?php the_field('description'); ?>
+					<?php the_field('team_description'); ?>
 				</div>
 			</div>
 			<a class="button" href="<?php echo get_site_url() . '/about-us#team'; ?>">Back to Team</a>

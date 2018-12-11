@@ -19,6 +19,7 @@
 	</div>
 </div>
 
+<?php $i = 0; ?>
 <?php if( have_rows('partner_images') ): ?>
 <div class="wrapper">
 	<ul class="partner-images">
@@ -28,6 +29,17 @@
 		<?php $image = get_sub_field('image'); ?>	
 
 		<li style="background-image: url(<?php echo $image['url']; ?>);"></li>
+
+		<?php if($i===7): ?>
+
+			</ul>
+				<hr>
+			<ul class="partner-images">
+
+		<?php endif; ?>	
+
+
+		<?php $i++; ?>
 
 		<?php endwhile; ?>
 
