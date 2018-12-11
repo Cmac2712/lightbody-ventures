@@ -124,7 +124,7 @@ function lightbody_ventures_scripts() {
 
 	wp_enqueue_style( 'montserrat', 'https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700', array(), '20181129' );
 
-	wp_enqueue_style( 'normalize', '/assets/css/normalize.css', array(), '20181129' );
+	wp_enqueue_style( 'normalize', get_template_directory_uri() . '/assets/css/normalize.css', array(), '20181129' );
 
 	wp_enqueue_style( 'jquery-ui', get_template_directory_uri() . '/assets/css/jquery-ui.css', array(), '20181208'  );
 
