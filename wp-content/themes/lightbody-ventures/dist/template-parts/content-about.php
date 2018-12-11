@@ -19,27 +19,35 @@
 	</div>
 </div>
 
-<?php $i = 0; ?>
-<?php if( have_rows('partner_images') ): ?>
+<?php if( have_rows('brand_partner_images') ): ?>
 <div class="wrapper">
 	<ul class="partner-images">
 
-		<?php while( have_rows('partner_images') ): the_row(); ?>
+		<?php while( have_rows('brand_partner_images') ): the_row(); ?>
 
 		<?php $image = get_sub_field('image'); ?>	
 
 		<li style="background-image: url(<?php echo $image['url']; ?>);"></li>
 
-		<?php if($i===7): ?>
+		<?php endwhile; ?>
 
-			</ul>
-				<hr>
-			<ul class="partner-images">
+	</ul>
+</div>
+<?php endif; ?>
 
-		<?php endif; ?>	
+<div class="wrapper">
+	<hr>
+</div>
 
+<?php if( have_rows('retail_partner_images') ): ?>
+<div class="wrapper">
+	<ul class="partner-images">
 
-		<?php $i++; ?>
+		<?php while( have_rows('retail_partner_images') ): the_row(); ?>
+
+		<?php $image = get_sub_field('image'); ?>	
+
+		<li style="background-image: url(<?php echo $image['url']; ?>);"></li>
 
 		<?php endwhile; ?>
 

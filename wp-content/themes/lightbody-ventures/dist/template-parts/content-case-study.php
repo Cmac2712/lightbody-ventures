@@ -19,8 +19,8 @@
 			<section class="case-study-section">
 				<div class="wrapper">
 						<article class="case-study-section__article">
-							<h3><?php the_sub_field('title'); ?></h3>
-							<p><?php the_sub_field('description'); ?></p>
+							<h3 class="case-study__title"><?php the_sub_field('title'); ?></h3>
+							<p class="case-study__description"><?php the_sub_field('description'); ?></p>
 						</article>
 				</div>
 			</section>

@@ -39,8 +39,8 @@
 		var logoCarousel = $('#logos');
 		var owlOptions = {
 			margin: 50,
-			nav: true, 
 			dots: true, 
+			loop:true, 
 			responsive:{
 				0:{
 					items:3
@@ -48,7 +48,7 @@
 				600:{
 					nav: false, 
 					dots: false, 
-					items:3
+					items:4
 				},
 				1000:{
 					items:4, 
@@ -59,6 +59,16 @@
 		}
 
 		logoCarousel.owlCarousel(owlOptions)
+
+		$('.carousel-nav__left').on('click', function(e) {
+			e.preventDefault();
+			$('#logos').trigger('prev.owl.carousel');
+		});
+
+		$('.carousel-nav__right').on('click', function(e) {
+			e.preventDefault();
+			$('#logos').trigger('next.owl.carousel');
+		});
 	}
 
 	// Scroll to next section

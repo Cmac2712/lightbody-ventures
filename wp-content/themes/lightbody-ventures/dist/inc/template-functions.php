@@ -75,18 +75,22 @@ $link = get_field('footer_link');
 $string .= '<footer class="main-footer">';
 $string .= '	<div class="wrapper">';
 $string .= '		<div class="main-footer__container">';
+$string .= '			<div class="footer__left">';
 $string .= '			<div class="contact-cta">';
 $string .= '				<div class="contact-cta__text">';
 $string .= 					'<p>' . get_field('footer_info') . '</p>';
 $string .= '				</div>';
 $string .= '				<a href="'. $link . '" class="button button--light button--large contact-cta__button">' . trim( get_field('footer_link_text') ) . '</a>';
 $string .= '			</div>';
-$string .= '			<address class="address company-address">';
-$string .= 				get_field('address');
-$string .= '			</address>';
+$string .= '			</div>';
+$string .= '            <div class="footer__right">';
 $string .= '			<div class="logo logo--footer">';
 $string .= '			<img src="' . get_field('footer_logo')['url'] . '" alt="Lightbody Ventures">';
 $string .= '			</div>';
+$string .= '			<address class="address company-address">';
+$string .= 				get_field('address');
+$string .= '			</address>';
+$string .= '		    </div>';
 $string .= '		</div>';
 $string .= '	</div>';
 $string .= '</footer>';
@@ -196,6 +200,10 @@ function display_work_posts ($title = '')
 			$string .= '				<div class="work-item__container hover-expand__container">';
 			$string .= '					<h3 class="work-item__title hover-expand__title">' . get_the_title() . '</h3>';
 			$string .= '				    <p class="work-item__desc">' . get_field('short_text') . '</p>';
+			$string .= '				    <p class="work-item__desc">Identified a multi-million dollar
+				opportunity in bakery for the
+				number one confectionery brand
+				in the US</p>';
 			$string .= '					<span class="find-out-more">Find Out More &rarr;</span> ';
 			$string .= '				</div>';
 			$string .= '			</a>';
