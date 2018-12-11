@@ -145,7 +145,6 @@ hr {
 	max-width: 1250px;
 	margin: 0 auto;
 	padding: 0 $base-spacing-unit;
-	overflow: hidden;
 }
 
 .list-stripped {
@@ -414,6 +413,7 @@ body .owl-theme .owl-dots .owl-dot.active span {
 	overflow: hidden;
 	height: calc(100vh - 117px);
 	background-size: cover;
+	background-image: url(./assets/images/hero-background.png);
 }
 
 .hero__title {
@@ -479,6 +479,10 @@ body .owl-theme .owl-dots .owl-dot.active span {
 	background-color: $shade-light;
 	text-align: center;
 	padding: $base-spacing-unit * 3 0;
+}
+
+.partner .wrapper {
+	overflow: hidden;
 }
 
 .partner__title {

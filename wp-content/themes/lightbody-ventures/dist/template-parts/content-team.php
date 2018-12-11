@@ -1,4 +1,7 @@
-<div class="hero hero--about" style="background-image: url(<?php echo $background_image['url']; ?>);">
+<?php $background_image = get_field('background_image'); ?>
+
+<div class="hero hero--about"
+<?php if( get_field('background_image') ): ?> style="background-image: url(<?php echo $background_image['url']; ?>);" <?php endif;?> >
 	<div class="wrapper wrapper--hero">
 		<div class="hero__page-title">Our Team</div>
 		<h1 class="hero__title">

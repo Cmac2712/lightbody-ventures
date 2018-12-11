@@ -94,8 +94,7 @@ hr {
   width: 100%;
   max-width: 1250px;
   margin: 0 auto;
-  padding: 0 24px;
-  overflow: hidden; }
+  padding: 0 24px; }
 
 .list-stripped {
   list-style-type: none; }
@@ -309,7 +308,8 @@ body .owl-theme .owl-dots .owl-dot.active span {
   padding-bottom: 72px;
   overflow: hidden;
   height: calc(100vh - 117px);
-  background-size: cover; }
+  background-size: cover;
+  background-image: url(./assets/images/hero-background.png); }
 
 .hero__title {
   font-weight: 600;
@@ -360,6 +360,9 @@ body .owl-theme .owl-dots .owl-dot.active span {
   background-color: #efefef;
   text-align: center;
   padding: 72px 0; }
+
+.partner .wrapper {
+  overflow: hidden; }
 
 .partner__title {
   font-weight: 600; }
