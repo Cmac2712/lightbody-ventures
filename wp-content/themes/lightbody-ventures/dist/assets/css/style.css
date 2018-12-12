@@ -1167,6 +1167,19 @@ span.ui-button.ui-selectmenu-button.ui-selectmenu-button-open {
 .products li:before {
   content: none; }
 
+.disney table {
+  border: 0;
+  margin-bottom: 24px; }
+
+.disney table td {
+  border: 0;
+  padding: 0 24px;
+  color: #1a6231;
+  font-size: 16px; }
+
+.disney table tr:nth-child(odd) {
+  background-color: #a2c51b; }
+
 .disney .hero {
   background-size: 100% auto;
   background-position: 50%;
@@ -1204,29 +1217,36 @@ span.product__weight {
   justify-content: flex-start;
   justify-content: space-between;
   margin-top: 24px; }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1024px) {
     .product__main {
       flex-wrap: nowrap; } }
 
 .product__column {
   flex-basis: 100%; }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1024px) {
     .product__column {
       flex-basis: 40%; } }
 
 .product__column.column-first {
   flex-basis: 100%;
   justify-content: center; }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1024px) {
     .product__column.column-first {
       flex-basis: 20%; } }
 
 .product__column.column-second {
   flex-basis: 100%;
   padding: 0 24px; }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1024px) {
     .product__column.column-second {
       flex-basis: 40%; } }
+
+.product__column.column-second {
+  display: flex;
+  flex-direction: column; }
+
+.product__column.column-third {
+  flex-wrap: wrap; }
 
 .product__usps {
   text-align: center; }
@@ -1236,6 +1256,7 @@ span.product__weight {
   margin: 0 auto; }
   @media screen and (min-width: 768px) {
     .product__advice {
+      flex-basis: 100%;
       margin: 0; } }
 
 .product__advice img {
@@ -1251,7 +1272,10 @@ span.product__weight {
 
 .product__description {
   font-size: 24px;
-  margin-bottom: 48px; }
+  margin-bottom: 24px; }
+  @media screen and (min-width: 768px) {
+    .product__description {
+      height: 600px; } }
 
 .product__description p {
   margin-top: 0; }
@@ -1272,13 +1296,7 @@ span.product__weight {
   padding-top: 24px;
   max-width: 335px;
   margin: 0 auto;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height .25s ease; }
-
-.active + .accordion__content {
-  max-height: 500px;
-  transition: max-height .25s ease; }
+  overflow: hidden; }
 
 .nutritional .accordion__content img,
 .ingredients .accordion__content img {

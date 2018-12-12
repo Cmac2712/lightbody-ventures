@@ -26,6 +26,7 @@ $brand-color-light: #a33a7c;
 $shade-light: #efefef;
 $shade: #e3e3e3;
 $disney-green: #1a6231;
+$disney-green-light: #a2c51b;
 
 // Text
 
@@ -1519,6 +1520,22 @@ span.ui-button.ui-selectmenu-button.ui-selectmenu-button-open {
 
 // Disney Kitchen Product
 
+.disney table {
+	border: 0;
+	margin-bottom: $base-spacing-unit;
+}
+
+.disney table td {
+	border: 0;
+	padding: 0 $base-spacing-unit;
+	color: $disney-green;
+	font-size: $epsilon-font-size;
+}
+
+.disney table tr:nth-child(odd) {
+	background-color: $disney-green-light;
+}
+
 .disney .hero {
 	background-size: 100% auto;
 	//background-size: cover;
@@ -1568,7 +1585,7 @@ span.product__weight {
 	margin-top: $base-spacing-unit;
 	//border: 1px red solid;
 
-	@media screen and (min-width: $lap) {
+	@media screen and (min-width: $desk) {
 		flex-wrap: nowrap;
 	}
 }
@@ -1576,7 +1593,7 @@ span.product__weight {
 .product__column {
 	flex-basis: 100%;
 
-	@media screen and (min-width: $lap) {
+	@media screen and (min-width: $desk) {
 		flex-basis: 40%;
 	}
 }
@@ -1587,7 +1604,7 @@ span.product__weight {
 	justify-content: center;
 
 
-	@media screen and (min-width: $lap) {
+	@media screen and (min-width: $desk) {
 		flex-basis: 20%;
 	}
 }
@@ -1596,9 +1613,20 @@ span.product__weight {
 	flex-basis: 100%;
 	padding: 0 $base-spacing-unit;
 
-	@media screen and (min-width: $lap) {
+	@media screen and (min-width: $desk) {
 		flex-basis: 40%;
 	}
+}
+
+.product__column.column-second {
+	display: flex;
+	flex-direction: column;
+}
+
+
+.product__column.column-third {
+//	display: flex;
+	flex-wrap: wrap;
 }
 
 .product__usps {
@@ -1610,6 +1638,7 @@ span.product__weight {
 	margin: 0 auto;
 
 	@media screen and (min-width: $lap)  {
+		flex-basis: 100%;
 		margin: 0;
 	}
 }
@@ -1630,7 +1659,11 @@ span.product__weight {
 
 .product__description {
 	font-size: $gamma-font-size;
-	margin-bottom: $base-spacing-unit * 2;
+	margin-bottom: $base-spacing-unit;
+
+	@media screen and (min-width: $lap)  {
+		height: 600px;
+	}
 }
 
 .product__description p {
@@ -1654,14 +1687,7 @@ span.product__weight {
 	padding-top: $base-spacing-unit;
 	max-width: 335px; 
 	margin: 0 auto;
-	max-height: 0;
 	overflow: hidden;
-	transition: max-height .25s ease;
-}
-
-.active + .accordion__content {
-	max-height: 500px;
-	transition: max-height .25s ease;
 }
 
 .nutritional .accordion__content img, 

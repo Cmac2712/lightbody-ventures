@@ -22,14 +22,14 @@
 					<div class="accordion__link">
 					</div>
 					<div class="accordion__content">
-						<img src="<?php echo get_field('nutritional_information')['url']; ?>" alt="">
+						<?php echo get_field('nutritional_information'); ?>
 					</div>
 				</div>
 				<div class="accordion ingredients">
 					<div class="accordion__link">
 					</div>
 					<div class="accordion__content">
-						<img src="<?php echo get_field('ingredients')['url']; ?>" alt="">
+						<?php echo get_field('ingredients'); ?>
 					</div>
 				</div>
 			</div>
