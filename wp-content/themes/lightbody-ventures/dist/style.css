@@ -333,6 +333,9 @@ body .owl-theme .owl-dots .owl-dot.active span {
 .logo {
   min-width: 200px; }
 
+.ios .logo img {
+  width: 200px; }
+
 .main-header {
   background-color: #fff;
   padding: 24px 0; }

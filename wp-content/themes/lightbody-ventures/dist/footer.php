@@ -87,6 +87,24 @@
 })(jQuery);
 
 
+conditionizr.add('safari', function () {
+  return /constructor/i.test(window.HTMLElement);
+});
+
+conditionizr.add('ios', /iP(ad|hone|od)/i.test(navigator.userAgent));
+
+conditionizr.add('ie11', /(?:\sTrident\/7\.0;.*\srv:11\.0)/i.test(navigator.userAgent));
+
+conditionizr.add('chrome', /google/i.test(navigator.vendor));
+
+conditionizr.config({
+	tests: {
+		'chrome': ['class'], 
+		'ios': ['class'], 
+		'ie11': ['class']
+	}
+});
+
 </script>
 
 </body>

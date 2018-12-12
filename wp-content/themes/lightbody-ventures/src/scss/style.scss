@@ -439,6 +439,14 @@ body .owl-theme .owl-dots .owl-dot.active span {
 	min-width: 200px;
 }
 
+.ios .logo img {
+	width: 200px;
+}
+
+//.safari * { border: 1px yellow solid; }
+// .ios * { border: 1px blue solid; }
+// .chrome * { border: 1px green solid; }
+
 .main-header {
 	background-color: #fff;
 	padding: $base-spacing-unit 0;
@@ -484,7 +492,6 @@ body .owl-theme .owl-dots .owl-dot.active span {
 	margin-bottom: $base-spacing-unit * 2;
 	font-size: $beta-font-size;
 }
-
 
 .hero__desc {
 	margin-bottom: $base-spacing-unit;

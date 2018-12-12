@@ -140,12 +140,13 @@ function lightbody_ventures_scripts() {
 
 	wp_enqueue_script( 'jquery-ui', 'https://code.jquery.com/ui/1.12.0/jquery-ui.min.js', array('jquery'), '20181208', true );
 
+	wp_enqueue_script( 'conditionizr', get_template_directory_uri() . '/js/conditionizr.min.js', array(), '20181208', true );
+
 	wp_enqueue_script( 'owl-carousel', get_template_directory_uri() . '/js/owl.carousel.js', array('jquery'), '20181129', true );
 
 	wp_enqueue_script( 'slideout', 'https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js', array(), '20181129', true );
 
 	wp_enqueue_script( 'lightbody-ventures-js', get_template_directory_uri() . '/js/index.js', array(), '20181129', true );
-
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
