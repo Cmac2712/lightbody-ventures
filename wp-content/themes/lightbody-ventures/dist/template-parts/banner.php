@@ -1,7 +1,34 @@
+<?php $background_image_mobile = get_field('background_image_mobile'); ?>
+<?php $background_image_lap = get_field('background_image_lap'); ?>
 <?php $background_image = get_field('background_image'); ?>
 
-<div class="hero"
-<?php if( get_field('background_image') ): ?> style="background-image: url(<?php echo $background_image['url']; ?>);" <?php endif;?> >
+<?php if ( get_field('background_image') ): ?>
+<style>
+	
+	<?php if ( get_field('background_image_mobile') ): ?>
+		.hero { background-image: url(<?php echo $background_image_mobile['url']; ?>); }
+	<?php else: ?>
+		.hero { background-image: url(<?php echo $background_image['url']; ?>); }
+	<?php endif; ?>
+
+@media screen and (min-width: 768px) {
+
+	<?php if ( get_field('background_image_lap') ): ?>
+		.hero { background-image: url(<?php echo $background_image_lap['url']; ?>); }
+	<?php else: ?>
+		.hero { background-image: url(<?php echo $background_image['url']; ?>); }
+	<?php endif; ?>
+
+}
+
+@media screen and (min-width: 1024px) {
+	.hero { background-image: url(<?php echo $background_image['url']; ?>); }
+}
+	
+</style>
+<?php endif; ?>
+
+<div class="hero">
 
 	<div class="wrapper wrapper--hero">
 
