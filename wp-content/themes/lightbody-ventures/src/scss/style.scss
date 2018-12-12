@@ -1485,7 +1485,7 @@ span.ui-button.ui-selectmenu-button.ui-selectmenu-button-open {
 }
 
 .products__title {
-	font-family: 'Tapeside';
+	font-family: 'Tapeside',  sans-serif;
 	color: $disney-green;
 	text-align: center;
 }
@@ -1510,6 +1510,7 @@ span.ui-button.ui-selectmenu-button.ui-selectmenu-button-open {
 
 // Disney Kitchen Product
 
+.page-template-mumsnet-template .hero,  
 .page-template-disney-kitchen-products .hero, 
 .page-template-disney-homepage-template .hero,
 .page-template-disney-kitchen-product .hero {
@@ -1523,6 +1524,7 @@ span.ui-button.ui-selectmenu-button.ui-selectmenu-button-open {
 	}
 }
 
+.page-template-mumsnet-template .scroll-down,  
 .page-template-disney-kitchen-products .scroll-down, 
 .page-template-disney-homepage-template .scroll-down, 
 .page-template-disney-kitchen-product .scroll-down {
@@ -1640,6 +1642,32 @@ span.product__weight {
 
 .ingredients .accordion__link {
 	background-image: url(./assets/images/ingredients-header.png);
+}
+
+// Mumsnet
+
+.mumsnet {
+	text-align: center;
+	margin-top: $base-spacing-unit;
+	margin-bottom: $base-spacing-unit * 3;
+}
+
+.mumsnet .wrapper {
+	max-width: $lap;
+}
+
+.mumsnet__title {
+	font-family: 'Tapeside',  sans-serif;
+	color: $disney-green;
+}
+
+.mumsnet__logo {
+	max-width: 200px;
+	margin: 0 auto;
+}
+
+.mumsnet__logo img {
+	width: 100%;
 }
 
 /**
