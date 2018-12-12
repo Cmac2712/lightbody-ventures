@@ -84,6 +84,12 @@
 		});
 	}
 
+	if ( $('.accordion__link').length ) {
+		 $('.accordion__link').on('click', function() {
+				$(this).toggleClass('active');
+		 });
+	}
+
 })(jQuery);
 
 

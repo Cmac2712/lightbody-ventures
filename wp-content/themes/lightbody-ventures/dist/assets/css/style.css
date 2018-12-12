@@ -19,6 +19,10 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 /**
  * VARS
  */
+@font-face {
+  font-family: 'Tapeside';
+  src: url("./assets/fonts/TapesideLTCom-Bold.woff2") format("woff2"), url("./assets/fonts/TapesideLTCom-Bold.woff") format("woff"), url("./assets/fonts/TapesideLTCom-Bold.ttf") format("truetype"); }
+
 /** 
  * BASE 
  */
@@ -1121,6 +1125,141 @@ span.ui-button.ui-selectmenu-button.ui-selectmenu-button-open {
 
 .contact-success .button {
   margin-top: 24px; }
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+.products__product {
+  flex-basis: 33%;
+  margin-bottom: 72px;
+  text-align: center; }
+
+.products__title {
+  font-family: 'Tapeside';
+  color: #1a6231;
+  text-align: center; }
+
+.products__product .product__image {
+  max-width: 100%;
+  padding: 0 24px; }
+
+.products__product a {
+  text-decoration: none; }
+
+.product__title {
+  font-family: 'Tapeside';
+  color: #1a6231; }
+
+.products li:before {
+  content: none; }
+
+.page-template-disney-kitchen-products .hero,
+.page-template-disney-homepage-template .hero,
+.page-template-disney-kitchen-product .hero {
+  background-size: 100% auto;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-color: #1a6231; }
+  @media screen and (min-width: 1100px) {
+    .page-template-disney-kitchen-products .hero,
+    .page-template-disney-homepage-template .hero,
+    .page-template-disney-kitchen-product .hero {
+      background-size: 1100px auto; } }
+
+.page-template-disney-kitchen-products .scroll-down,
+.page-template-disney-homepage-template .scroll-down,
+.page-template-disney-kitchen-product .scroll-down {
+  display: none; }
+
+.page-template-disney-homepage-template .work__container {
+  margin-top: 72px; }
+
+.wrapper--product {
+  max-width: 1100px; }
+
+.product--disney {
+  font-family: 'Tapeside', sans-serif;
+  padding: 72px 0; }
+  .product--disney h1, .product--disney h2, .product--disney h3, .product--disney h4, .product--disney h5, .product--disney h6, .product--disney p, .product--disney a, .product--disney li, .product--disney span {
+    color: #1a6231; }
+
+.product__title {
+  margin-bottom: 0; }
+
+span.product__weight {
+  font-family: 'Montserrat', sans-serif;
+  color: #333; }
+
+.product__main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  justify-content: space-between;
+  margin-top: 24px; }
+  @media screen and (min-width: 1024px) {
+    .product__main {
+      flex-wrap: nowrap; } }
+
+.product__column {
+  flex-basis: 100%; }
+  @media screen and (min-width: 1024px) {
+    .product__column {
+      flex-basis: 40%; } }
+
+.product__column.column-first {
+  flex-basis: 50%; }
+  @media screen and (min-width: 1024px) {
+    .product__column.column-first {
+      flex-basis: 20%; } }
+
+.product__column.column-second {
+  flex-basis: 50%; }
+  @media screen and (min-width: 1024px) {
+    .product__column.column-second {
+      flex-basis: 40%; } }
+
+.product__image {
+  max-width: 335px;
+  margin: 0 auto;
+  margin-bottom: 24px; }
+
+.product__description {
+  font-size: 24px;
+  margin-bottom: 48px; }
+
+.product__description p {
+  margin-top: 0; }
+
+.nutritional .accordion__link,
+.ingredients .accordion__link {
+  background-size: 100% auto;
+  background-image: url(./assets/images/nutritional-header.png);
+  max-width: 335px;
+  margin: 0 auto;
+  padding-bottom: 10%;
+  cursor: pointer; }
+
+.nutritional .accordion__content,
+.ingredients .accordion__content {
+  padding-top: 24px;
+  max-width: 335px;
+  margin: 0 auto;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height .25s ease; }
+
+.active + .accordion__content {
+  max-height: 500px;
+  transition: max-height .25s ease; }
+
+.nutritional .accordion__content img,
+.ingredients .accordion__content img {
+  width: 100%; }
+
+.ingredients .accordion__link {
+  background-image: url(./assets/images/ingredients-header.png); }
 
 /**
  * HELPERS

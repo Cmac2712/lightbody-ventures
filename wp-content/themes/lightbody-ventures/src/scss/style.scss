@@ -25,6 +25,7 @@ $brand-color: #68123d;
 $brand-color-light: #a33a7c;
 $shade-light: #efefef;
 $shade: #e3e3e3;
+$disney-green: #1a6231;
 
 // Text
 
@@ -54,6 +55,13 @@ $palm: 500px;
 $lap: 768px;
 $desk: 1024px;
 $desk-wide: 1250px;
+
+@font-face {
+  font-family: 'Tapeside';
+      src: url('./assets/fonts/TapesideLTCom-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+       url('./assets/fonts/TapesideLTCom-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+       url('./assets/fonts/TapesideLTCom-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
 
 /** 
  * BASE 
@@ -1456,6 +1464,182 @@ span.ui-button.ui-selectmenu-button.ui-selectmenu-button-open {
 
 .contact-success .button {
 	margin-top: $base-spacing-unit;
+}
+
+// Disney Kitchen Products List
+
+.disney-products {
+	
+}
+
+.products {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.products__product {
+	flex-basis: 33%;
+	margin-bottom: $base-spacing-unit * 3;
+	text-align: center;
+}
+
+.products__title {
+	font-family: 'Tapeside';
+	color: $disney-green;
+	text-align: center;
+}
+
+.products__product .product__image {
+	max-width: 100%;
+	padding: 0 $base-spacing-unit;
+}
+
+.products__product a {
+	text-decoration: none;
+}
+
+.product__title {
+	font-family: 'Tapeside';
+	color: $disney-green;
+}
+
+.products li:before {
+	content: none;
+}
+
+// Disney Kitchen Product
+
+.page-template-disney-kitchen-products .hero, 
+.page-template-disney-homepage-template .hero,
+.page-template-disney-kitchen-product .hero {
+	background-size: 100% auto;
+	background-position: 50%;
+	background-repeat: no-repeat;
+	background-color: $disney-green;
+
+	@media screen and (min-width: 1100px)  {
+		background-size: 1100px auto;
+	}
+}
+
+.page-template-disney-kitchen-products .scroll-down, 
+.page-template-disney-homepage-template .scroll-down, 
+.page-template-disney-kitchen-product .scroll-down {
+	display: none;
+}
+
+.page-template-disney-homepage-template .work__container {
+	margin-top: $base-spacing-unit * 3;
+}
+
+.wrapper--product {
+	max-width: 1100px;
+}
+
+.product--disney {
+	font-family: 'Tapeside', sans-serif;
+	padding: $base-spacing-unit * 3 0;
+	h1, h2, h3, h4, h5, h6, p, a, li, span {
+		color: $disney-green;
+	}
+}
+
+.product__title {
+	margin-bottom: 0;
+}
+
+span.product__weight {
+	font-family: 'Montserrat', sans-serif;
+	color: $base-font-color;
+}
+
+.product__main {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	justify-content: space-between;
+	margin-top: $base-spacing-unit;
+	//border: 1px red solid;
+
+	@media screen and (min-width: $desk) {
+		flex-wrap: nowrap;
+	}
+}
+
+.product__column {
+	flex-basis: 100%;
+
+	@media screen and (min-width: $desk) {
+		flex-basis: 40%;
+	}
+}
+
+.product__column.column-first {
+	//padding: 0 $base-spacing-unit;
+	flex-basis: 50%;
+
+	@media screen and (min-width: $desk) {
+		flex-basis: 20%;
+	}
+}
+
+.product__column.column-second {
+	flex-basis: 50%;
+
+	@media screen and (min-width: $desk) {
+		flex-basis: 40%;
+	}
+}
+
+
+.product__image {
+	max-width: 335px;
+	margin: 0 auto;
+	margin-bottom: $base-spacing-unit;
+}
+
+.product__description {
+	font-size: $gamma-font-size;
+	margin-bottom: $base-spacing-unit * 2;
+}
+
+.product__description p {
+	margin-top: 0;
+}
+
+.nutritional .accordion__link, 
+.ingredients .accordion__link {
+	background-size: 100% auto;
+	background-image: url(./assets/images/nutritional-header.png);
+	max-width: 335px; //378px x 48px
+	margin: 0 auto;
+	padding-bottom: 10%;
+	cursor: pointer;
+}
+
+.nutritional .accordion__content, 
+.ingredients .accordion__content {
+	padding-top: $base-spacing-unit;
+	max-width: 335px; 
+	margin: 0 auto;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height .25s ease;
+}
+
+.active + .accordion__content {
+	max-height: 500px;
+	transition: max-height .25s ease;
+}
+
+.nutritional .accordion__content img, 
+.ingredients .accordion__content img {
+	width: 100%;
+}
+
+.ingredients .accordion__link {
+	background-image: url(./assets/images/ingredients-header.png);
 }
 
 /**

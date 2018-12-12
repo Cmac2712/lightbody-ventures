@@ -200,10 +200,6 @@ function display_work_posts ($title = '')
 			$string .= '				<div class="work-item__container hover-expand__container">';
 			$string .= '					<h3 class="work-item__title hover-expand__title">' . get_the_title() . '</h3>';
 			$string .= '				    <p class="work-item__desc">' . get_field('short_text') . '</p>';
-			$string .= '				    <p class="work-item__desc">Identified a multi-million dollar
-				opportunity in bakery for the
-				number one confectionery brand
-				in the US</p>';
 			$string .= '					<span class="find-out-more">Find Out More &rarr;</span> ';
 			$string .= '				</div>';
 			$string .= '			</a>';
