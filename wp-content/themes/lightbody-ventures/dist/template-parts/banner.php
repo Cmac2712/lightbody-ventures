@@ -1,3 +1,4 @@
+<?php $banner_background = get_field('banner_background'); ?>
 <?php $background_image_mobile = get_field('background_image_mobile'); ?>
 <?php $background_image_lap = get_field('background_image_lap'); ?>
 <?php $background_image = get_field('background_image'); ?>
@@ -6,24 +7,30 @@
 <style>
 	
 	<?php if ( get_field('background_image_mobile') ): ?>
-		.hero { background-image: url(<?php echo $background_image_mobile['url']; ?>); }
+		.hero:after { background-image: url(<?php echo $background_image_mobile['url']; ?>); }
 	<?php else: ?>
-		.hero { background-image: url(<?php echo $background_image['url']; ?>); }
+		.hero:after { background-image: url(<?php echo $background_image['url']; ?>); }
 	<?php endif; ?>
 
 @media screen and (min-width: 768px) {
 
 	<?php if ( get_field('background_image_lap') ): ?>
-		.hero { background-image: url(<?php echo $background_image_lap['url']; ?>); }
+		.hero:after { background-image: url(<?php echo $background_image_lap['url']; ?>); }
 	<?php else: ?>
-		.hero { background-image: url(<?php echo $background_image['url']; ?>); }
+		.hero:after { background-image: url(<?php echo $background_image['url']; ?>); }
 	<?php endif; ?>
 
 }
 
 @media screen and (min-width: 1024px) {
-	.hero { background-image: url(<?php echo $background_image['url']; ?>); }
+	.hero:after { background-image: url(<?php echo $background_image['url']; ?>); }
 }
+
+	<?php if ( get_field('banner_background') ): ?>
+		.hero {
+			background-image: url(<?php echo $banner_background['url']; ?>);
+		}
+	<?php endif; ?>
 	
 </style>
 <?php endif; ?>
