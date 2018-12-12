@@ -120,7 +120,7 @@ add_action( 'widgets_init', 'lightbody_ventures_widgets_init' );
  * Enqueue scripts and styles.
  */
 function lightbody_ventures_scripts() {
-	wp_enqueue_style( 'lightbody-ventures-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'lightbody-ventures-style', get_stylesheet_uri(), array(), '20181212' );
 
 	wp_enqueue_style( 'montserrat', 'https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700', array(), '20181129' );
 
