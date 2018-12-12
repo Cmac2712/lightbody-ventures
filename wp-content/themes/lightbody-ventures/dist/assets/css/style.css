@@ -1201,32 +1201,50 @@ span.product__weight {
   justify-content: flex-start;
   justify-content: space-between;
   margin-top: 24px; }
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 768px) {
     .product__main {
       flex-wrap: nowrap; } }
 
 .product__column {
   flex-basis: 100%; }
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 768px) {
     .product__column {
       flex-basis: 40%; } }
 
 .product__column.column-first {
-  flex-basis: 50%; }
-  @media screen and (min-width: 1024px) {
+  flex-basis: 100%;
+  justify-content: center; }
+  @media screen and (min-width: 768px) {
     .product__column.column-first {
       flex-basis: 20%; } }
 
 .product__column.column-second {
-  flex-basis: 50%; }
-  @media screen and (min-width: 1024px) {
+  flex-basis: 100%;
+  padding: 0 24px; }
+  @media screen and (min-width: 768px) {
     .product__column.column-second {
       flex-basis: 40%; } }
+
+.product__usps {
+  text-align: center; }
+
+.product__advice {
+  max-width: 335px;
+  margin: 0 auto; }
+  @media screen and (min-width: 768px) {
+    .product__advice {
+      margin: 0; } }
+
+.product__advice img {
+  max-width: 100%; }
 
 .product__image {
   max-width: 335px;
   margin: 0 auto;
   margin-bottom: 24px; }
+
+.product__image img {
+  max-width: 100%; }
 
 .product__description {
   font-size: 24px;
@@ -1239,9 +1257,11 @@ span.product__weight {
 .ingredients .accordion__link {
   background-size: 100% auto;
   background-image: url(./assets/images/nutritional-header.png);
+  background-repeat: no-repeat;
+  width: 100%;
+  padding-bottom: 12%;
   max-width: 335px;
   margin: 0 auto;
-  padding-bottom: 10%;
   cursor: pointer; }
 
 .nutritional .accordion__content,
