@@ -38,6 +38,11 @@ body {
   line-height: 1.5;
   margin: 0; }
 
+.disney h1, .disney h2, .disney h3, .disney h4, .disney h5, .disney h6 {
+  text-transform: none;
+  font-family: 'Tapeside', sans-serif;
+  color: #1a6231; }
+
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   text-transform: uppercase;
@@ -629,13 +634,20 @@ body .owl-theme .owl-dots .owl-dot.active span {
   bottom: 0;
   left: 0;
   right: 0;
-  color: #fff;
   line-height: 1;
   background-color: #68123d;
   padding: 24px;
   margin: 0;
   opacity: .9;
   font-weight: 600; }
+
+.work-item__container {
+  color: #fff; }
+  .work-item__container h1, .work-item__container h2, .work-item__container h3, .work-item__container h4, .work-item__container h5, .work-item__container h6 {
+    color: #fff; }
+
+.disney .work-item__container {
+  background-color: #1a6231; }
 
 .work-item__title {
   display: inline-block; }
@@ -1129,12 +1141,16 @@ span.ui-button.ui-selectmenu-button.ui-selectmenu-button-open {
 .products {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; }
+  justify-content: center;
+  padding-left: 0; }
 
 .products__product {
-  flex-basis: 33%;
+  flex-basis: 100%;
   margin-bottom: 72px;
   text-align: center; }
+  @media screen and (min-width: 768px) {
+    .products__product {
+      flex-basis: 33%; } }
 
 .products__title {
   font-family: 'Tapeside',  sans-serif;
@@ -1148,32 +1164,19 @@ span.ui-button.ui-selectmenu-button.ui-selectmenu-button-open {
 .products__product a {
   text-decoration: none; }
 
-.product__title {
-  font-family: 'Tapeside';
-  color: #1a6231; }
-
 .products li:before {
   content: none; }
 
-.page-template-mumsnet-template .hero,
-.page-template-disney-kitchen-products .hero,
-.page-template-disney-homepage-template .hero,
-.page-template-disney-kitchen-product .hero {
+.disney .hero {
   background-size: 100% auto;
   background-position: 50%;
   background-repeat: no-repeat;
   background-color: #1a6231; }
   @media screen and (min-width: 1100px) {
-    .page-template-mumsnet-template .hero,
-    .page-template-disney-kitchen-products .hero,
-    .page-template-disney-homepage-template .hero,
-    .page-template-disney-kitchen-product .hero {
+    .disney .hero {
       background-size: 1100px auto; } }
 
-.page-template-mumsnet-template .scroll-down,
-.page-template-disney-kitchen-products .scroll-down,
-.page-template-disney-homepage-template .scroll-down,
-.page-template-disney-kitchen-product .scroll-down {
+.disney .scroll-down {
   display: none; }
 
 .page-template-disney-homepage-template .work__container {

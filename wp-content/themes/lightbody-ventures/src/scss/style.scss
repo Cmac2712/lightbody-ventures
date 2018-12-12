@@ -81,6 +81,14 @@ body {
 	margin: 0;
 }
 
+.disney {
+	h1, h2, h3, h4, h5, h6 {
+		text-transform: none;
+		font-family: 'Tapeside', sans-serif;
+		color: $disney-green;
+	}
+}
+
 h1, h2, h3, h4, h5, h6 {
 	margin-top: 0;
 	text-transform: uppercase;
@@ -826,23 +834,24 @@ body .owl-theme .owl-dots .owl-dot.active span {
 	bottom: 0;
 	left: 0;
 	right: 0;
-	color: #fff;
 	line-height: 1;
 	background-color: $brand-color;
 	padding: $base-spacing-unit;
 	margin: 0;
 	opacity: .9;
 	font-weight: 600;
-	// transform: translateY(calc(100% - 60px));
-	// transform: translateX(calc(-100% + 150px));
-	// transform: translate3j(calc(-100% + 150px), calc(100% - 60px), 0);
-	// transition: transform .25s ease;
 }
 
-// .work-item:hover .work-item__container {
-// 	transform: translateY(0px);
-// 	transition: transform .25s ease;
-// }
+.work-item__container {
+	h1, h2, h3, h4, h5, h6  {
+		color: #fff;
+	}
+	color: #fff;
+}
+
+.disney .work-item__container {
+	background-color: $disney-green;
+}
 
 .work-item__title {
 	display: inline-block;
@@ -1476,12 +1485,17 @@ span.ui-button.ui-selectmenu-button.ui-selectmenu-button-open {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	padding-left: 0;
 }
 
 .products__product {
-	flex-basis: 33%;
+	flex-basis: 100%;
 	margin-bottom: $base-spacing-unit * 3;
 	text-align: center;
+
+	@media screen and (min-width: $lap) {
+		flex-basis: 33%;
+	}
 }
 
 .products__title {
@@ -1499,21 +1513,13 @@ span.ui-button.ui-selectmenu-button.ui-selectmenu-button-open {
 	text-decoration: none;
 }
 
-.product__title {
-	font-family: 'Tapeside';
-	color: $disney-green;
-}
-
 .products li:before {
 	content: none;
 }
 
 // Disney Kitchen Product
 
-.page-template-mumsnet-template .hero,  
-.page-template-disney-kitchen-products .hero, 
-.page-template-disney-homepage-template .hero,
-.page-template-disney-kitchen-product .hero {
+.disney .hero {
 	background-size: 100% auto;
 	//background-size: cover;
 	background-position: 50%;
@@ -1525,10 +1531,7 @@ span.ui-button.ui-selectmenu-button.ui-selectmenu-button-open {
 	}
 }
 
-.page-template-mumsnet-template .scroll-down,  
-.page-template-disney-kitchen-products .scroll-down, 
-.page-template-disney-homepage-template .scroll-down, 
-.page-template-disney-kitchen-product .scroll-down {
+.disney .scroll-down {
 	display: none;
 }
 

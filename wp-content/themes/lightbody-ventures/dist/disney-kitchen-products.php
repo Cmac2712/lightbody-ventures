@@ -2,6 +2,8 @@
 
 /* Template Name: Disney Kitchen Products Template */
 
+$_SERVER['body_class'] = 'disney';
+
 ?>
 
 <?php  get_header(); ?>

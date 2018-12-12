@@ -24,7 +24,7 @@
 
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php body_class($_SERVER['body_class']); ?>>
 <div id="page" class="site">
 
 	<?php get_template_part('./inc/mobile', 'nav'); ?>

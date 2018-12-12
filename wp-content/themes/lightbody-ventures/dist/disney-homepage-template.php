@@ -2,9 +2,11 @@
 
 /* Template Name: Disney Homepage Template */
 
+$_SERVER['body_class'] = 'disney';
+
 ?>
 
-<?php  get_header(); ?>
+<?php get_header(); ?>
 
 
 		<?php
