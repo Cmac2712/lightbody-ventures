@@ -1217,7 +1217,8 @@ span.ui-button.ui-selectmenu-button.ui-selectmenu-button-open {
 .disney .hero {
   height: auto;
   padding-bottom: 10%;
-  background-color: #a2c51b; }
+  background-color: #a2c51b;
+  background-image: url("./assets/images/banner-background.png"); }
   @media screen and (min-width: 1100px) {
     .disney .hero {
       padding-bottom: 96px; } }
@@ -1225,14 +1226,26 @@ span.ui-button.ui-selectmenu-button.ui-selectmenu-button-open {
 .disney .hero:after {
   background-position: 50% 0;
   background-repeat: no-repeat;
-  background-size: contain; }
+  background-size: contain;
+  background-image: url("./assets/images/disney-kitchen-mobile.png"); }
+  @media screen and (min-width: 768px) {
+    .disney .hero:after {
+      background-image: url("./assets/images/disney-kitchen-laptop.png"); } }
   @media screen and (min-width: 1100px) {
     .disney .hero:after {
+      background-image: url("./assets/images/disney-kitchen-desktop.png");
       background-position: 50% 0;
       background-size: 1100px auto; } }
 
 .disney .scroll-down {
   display: none; }
+
+.disney footer,
+.disney footer .button {
+  background-color: #1a6231; }
+
+.disney footer .button {
+  background-color: #a2c51b; }
 
 .page-template-disney-homepage-template .work__container {
   margin-top: 72px; }
