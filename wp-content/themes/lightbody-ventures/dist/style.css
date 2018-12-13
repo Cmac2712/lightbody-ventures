@@ -240,7 +240,8 @@ body .owl-theme .owl-dots .owl-dot.active span {
   bottom: 72px;
   margin: auto;
   height: 36px;
-  width: 72px; }
+  width: 72px;
+  z-index: 99; }
 
 .scroll-down:after {
   position: absolute;

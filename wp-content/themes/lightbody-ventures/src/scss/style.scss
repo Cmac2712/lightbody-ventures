@@ -333,6 +333,7 @@ body .owl-theme .owl-dots .owl-dot.active span {
 	margin: auto;
 	height: $base-spacing-unit * 1.5;
 	width: $base-spacing-unit * 3;
+	z-index: 99;
 }
 
 .scroll-down:after {
