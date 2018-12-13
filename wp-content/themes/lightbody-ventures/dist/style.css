@@ -1314,6 +1314,7 @@ span.product__weight {
 
 .nutritional .accordion__content,
 .ingredients .accordion__content {
+  font-family: 'Montserrat', sans-serif;
   padding-top: 24px;
   max-width: 335px;
   margin: 0 auto;
