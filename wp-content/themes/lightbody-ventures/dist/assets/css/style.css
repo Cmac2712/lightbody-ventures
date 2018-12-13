@@ -1203,7 +1203,8 @@ span.ui-button.ui-selectmenu-button.ui-selectmenu-button-open {
 .disney table {
   font-family: 'Montserrat', sans-serif;
   border: 0;
-  margin-bottom: 24px; }
+  margin-bottom: 24px;
+  width: 100% !important; }
 
 .disney table td {
   border: 0;
@@ -1284,7 +1285,8 @@ span.product__weight {
 
 .product__column.column-first {
   flex-basis: 100%;
-  justify-content: center; }
+  justify-content: center;
+  max-width: 100%; }
   @media screen and (min-width: 1024px) {
     .product__column.column-first {
       flex-basis: 20%;
@@ -1300,6 +1302,9 @@ span.product__weight {
   display: flex;
   flex-direction: column; }
 
+.column-first {
+  max-width: 100%; }
+
 @media screen and (min-width: 1024px) {
   .product-main--second .column-first {
     flex-basis: 80%;
@@ -1307,9 +1312,10 @@ span.product__weight {
 
 @media screen and (min-width: 1024px) {
   .product__details {
-    padding: 0 48px; } }
+    padding: 0 96px; } }
 
 .product__column.column-third {
+  display: flex;
   flex-wrap: wrap; }
 
 .product__usps {
@@ -1320,23 +1326,23 @@ span.product__weight {
 
 .product__advice {
   max-width: 335px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  font-size: 0; }
   @media screen and (min-width: 768px) {
     .product__advice {
       flex-basis: 100%;
-      margin: 0; } }
+      margin: 0;
+      margin-top: auto; } }
 
 .product__advice img {
-  width: 100%;
   max-width: 100%; }
 
 .product__image {
-  margin: 0 auto;
-  margin-bottom: 24px;
-  padding: 0 48px; }
+  font-size: 0;
+  text-align: center; }
 
 .product__image img {
-  max-width: 100%; }
+  max-height: 400px; }
 
 .product__description {
   font-size: 24px;

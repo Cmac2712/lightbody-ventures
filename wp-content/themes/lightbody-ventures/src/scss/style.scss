@@ -1560,6 +1560,7 @@ span.ui-button.ui-selectmenu-button.ui-selectmenu-button-open {
 	font-family: 'Montserrat', sans-serif;
 	border: 0;
 	margin-bottom: $base-spacing-unit;
+	width: 100%!important;
 }
 
 .disney table td {
@@ -1648,7 +1649,6 @@ span.product__weight {
 	justify-content: flex-start;
 	justify-content: space-between;
 	margin-top: $base-spacing-unit;
-	//border: 1px red solid;
 
 	@media screen and (min-width: $desk) {
 		flex-wrap: nowrap;
@@ -1657,7 +1657,6 @@ span.product__weight {
 
 .product__column {
 	flex-basis: 100%;
-	//border: 1px red dashed;
 
 	@media screen and (min-width: $desk) {
 		flex-basis: 40%;
@@ -1668,6 +1667,7 @@ span.product__weight {
 	//padding: 0 $base-spacing-unit;
 	flex-basis: 100%;
 	justify-content: center;
+	max-width: 100%;
 
 
 	@media screen and (min-width: $desk) {
@@ -1690,6 +1690,10 @@ span.product__weight {
 	flex-direction: column;
 }
 
+.column-first {
+	max-width: 100%;
+}
+
 .product-main--second .column-first {
 
 	@media screen and (min-width: $desk) {
@@ -1701,12 +1705,12 @@ span.product__weight {
 
 .product__details {
 	@media screen and (min-width: $desk) {
-		padding: 0 $base-spacing-unit * 2;
+		padding: 0 $base-spacing-unit * 4;
 	}
 }
 
 .product__column.column-third {
-//	display: flex;
+	display: flex;
 	flex-wrap: wrap;
 }
 
@@ -1721,27 +1725,26 @@ span.product__weight {
 .product__advice {
 	max-width: 335px;
 	margin: 0 auto;
+	font-size: 0;
 
 	@media screen and (min-width: $lap)  {
 		flex-basis: 100%;
 		margin: 0;
+		margin-top: auto;
 	}
 }
 
 .product__advice img {
-	width: 100%;
 	max-width: 100%;
 }
 
 .product__image {
-	//max-width: 335px;
-	margin: 0 auto;
-	margin-bottom: $base-spacing-unit;
-	padding: 0 $base-spacing-unit * 2;
+	font-size: 0;
+	text-align: center;
 }
 
 .product__image img {
-	max-width: 100%;
+	max-height: 400px;
 }
 
 .product__description {
