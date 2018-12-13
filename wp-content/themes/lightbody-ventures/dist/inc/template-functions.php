@@ -217,6 +217,51 @@ function display_work_posts ($title = '')
 	return $string;
 }
 
+function display_featured_posts ($title = '')
+{
+
+	$args = array(
+		'post_type' => 'page', 
+		'meta_key' => 'show_in_homepage', 
+		'meta_value' => 1
+	);
+
+	$string = '';
+	$title = isset($title) ? $title : '';
+
+	$query = new WP_Query( $args );
+
+	if ( $query->have_posts() ) {
+
+		$string .= '<section class="work">';
+		$string .= '	<div class="wrapper">';
+		$string .= '		<h2 class="work__title">'. $title .'</h2>';
+		$string .= '		<div class="work__container">';
+
+		while ( $query->have_posts() ) {
+			$query->the_post();
+
+			$string .= '			<a href="' . get_the_permalink() . '" class="work-item hover-expand" style="background-image: url(' . get_the_post_thumbnail_url() . ')";>';
+			$string .= '				<div class="work-item__container hover-expand__container">';
+			$string .= '					<h3 class="work-item__title hover-expand__title">' . get_the_title() . '</h3>';
+			$string .= '				    <p class="work-item__desc">' . get_field('short_text') . '</p>';
+			$string .= '					<span class="find-out-more">Find Out More &rarr;</span> ';
+			$string .= '				</div>';
+			$string .= '			</a>';
+
+		}
+
+		$string .= '		</div>';
+		$string .= '	</div>';
+		$string .= '</section>';
+	
+	}
+
+	wp_reset_postdata();
+
+	return $string;
+}
+
 function display_team_members()
 {
 
