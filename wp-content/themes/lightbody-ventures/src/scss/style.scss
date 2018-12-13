@@ -856,6 +856,10 @@ body .owl-theme .owl-dots .owl-dot.active span {
 	}
 }
 
+.work-item p:empty {
+	display: block!important;
+}
+
 .work-item__container {
 	position: absolute;
 	top: 0;

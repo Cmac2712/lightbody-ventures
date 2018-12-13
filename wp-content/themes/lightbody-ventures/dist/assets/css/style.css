@@ -654,6 +654,9 @@ body .owl-theme .owl-dots .owl-dot.active span {
   .work-item:nth-child(4) {
     margin-bottom: 0; } }
 
+.work-item p:empty {
+  display: block !important; }
+
 .work-item__container {
   position: absolute;
   top: 0;
