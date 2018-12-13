@@ -553,6 +553,8 @@ body .owl-theme .owl-dots .owl-dot.active span {
 	margin-bottom: $base-spacing-unit * 3;
 	width: 100%;
 	max-width: 600px;
+	position: relative;
+	z-index: 5;
 }
 
 .hero-home__ctas a {
@@ -788,6 +790,12 @@ body .owl-theme .owl-dots .owl-dot.active span {
 
 .team-member__image img {
 	width: 100%;
+}
+
+.team-member__description {
+	margin: 0 auto;
+	max-width: 768px;
+	line-height: 2;
 }
 
 .team-member__description p {
@@ -1708,7 +1716,7 @@ span.product__weight {
 	background-repeat: no-repeat;
 	width: 100%;
 	padding-bottom: 12%;
-	max-width: 335px; //378px x 48px
+//	max-width: 335px; //378px x 48px
 	margin: 0 auto;
 	cursor: pointer;
 }
@@ -1717,7 +1725,7 @@ span.product__weight {
 .ingredients .accordion__content {
 	font-family: 'Montserrat', sans-serif;
 	padding-top: $base-spacing-unit;
-	max-width: 335px; 
+	//max-width: 335px; 
 	margin: 0 auto;
 	overflow: hidden;
 }

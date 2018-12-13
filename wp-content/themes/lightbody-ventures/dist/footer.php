@@ -90,11 +90,11 @@
 		 });
 	}
 
-	if ( $('.product__description').length ) {
-		var height = $('.product__image').height();
+	/* if ( $('.product__description').length ) { */
+	/* 	var height = $('.product__image').height(); */
 
-		$('.product__description').height( height );
-	}	
+	/* 	$('.product__description').height( height ); */
+	/* } */	
 
 })(jQuery);
 

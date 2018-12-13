@@ -17,6 +17,18 @@
 			<div class="product__image">
 				<img src="<?php echo get_field('product_image')['url']; ?>" alt="">
 			</div>
+		</div>
+		<div class="product__column column-third">
+			<div class="product__description">
+				<p>
+					<?php echo get_field('product_description'); ?>
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="product__main product-main--second">
+		<div class="product-main column-first">
 			<div class="product__details">
 				<div class="accordion nutritional">
 					<div class="accordion__link">
@@ -34,12 +46,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="product__column column-third">
-			<div class="product__description">
-				<p>
-					<?php echo get_field('product_description'); ?>
-				</p>
-			</div>
+		<div class="product-main column-second">
 			<div class="product__advice">
 				<img src="<?php echo get_field('product_advice')['url']; ?>" alt="">
 			</div>
