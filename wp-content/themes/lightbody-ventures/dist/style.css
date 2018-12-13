@@ -672,6 +672,9 @@ body .owl-theme .owl-dots .owl-dot.active span {
 .disney .work-item__container {
   background-color: #1a6231; }
 
+.disney .work-item__title {
+  font-size: 30px; }
+
 .work-item__title {
   display: inline-block; }
 
