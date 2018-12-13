@@ -24,6 +24,9 @@
 					<?php echo get_field('product_description'); ?>
 				</p>
 			</div>
+			<div class="product__advice">
+				<img src="<?php echo get_field('product_advice')['url']; ?>" alt="">
+			</div>
 		</div>
 	</div>
 
@@ -44,11 +47,6 @@
 						<?php echo get_field('ingredients'); ?>
 					</div>
 				</div>
-			</div>
-		</div>
-		<div class="product-main column-second">
-			<div class="product__advice">
-				<img src="<?php echo get_field('product_advice')['url']; ?>" alt="">
 			</div>
 		</div>
 	</div>

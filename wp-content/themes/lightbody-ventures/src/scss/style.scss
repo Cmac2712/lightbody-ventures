@@ -1635,6 +1635,7 @@ span.product__weight {
 
 .product__column {
 	flex-basis: 100%;
+	//border: 1px red dashed;
 
 	@media screen and (min-width: $desk) {
 		flex-basis: 40%;
@@ -1649,12 +1650,13 @@ span.product__weight {
 
 	@media screen and (min-width: $desk) {
 		flex-basis: 20%;
+		flex-grow: 20%;
 	}
 }
 
 .product__column.column-second {
 	flex-basis: 100%;
-	padding: 0 $base-spacing-unit;
+	//padding: 0 $base-spacing-unit;
 
 	@media screen and (min-width: $desk) {
 		flex-basis: 40%;
@@ -1666,6 +1668,20 @@ span.product__weight {
 	flex-direction: column;
 }
 
+.product-main--second .column-first {
+
+	@media screen and (min-width: $desk) {
+		flex-basis: 80%;
+		margin-left: 20%;
+	}	
+	
+}
+
+.product__details {
+	@media screen and (min-width: $desk) {
+		padding: 0 $base-spacing-unit * 2;
+	}
+}
 
 .product__column.column-third {
 //	display: flex;
@@ -1674,6 +1690,10 @@ span.product__weight {
 
 .product__usps {
 	text-align: center;
+}
+
+.product__usps img {
+	max-width: 100%;
 }
 
 .product__advice {
@@ -1687,11 +1707,12 @@ span.product__weight {
 }
 
 .product__advice img {
+	width: 100%;
 	max-width: 100%;
 }
 
 .product__image {
-	max-width: 335px;
+	//max-width: 335px;
 	margin: 0 auto;
 	margin-bottom: $base-spacing-unit;
 }
@@ -1719,18 +1740,21 @@ span.product__weight {
 	background-image: url(./assets/images/nutritional-header.png);
 	background-repeat: no-repeat;
 	width: 100%;
-	padding-bottom: 12%;
-//	max-width: 335px; //378px x 48px
-	margin: 0 auto;
+	//padding-bottom: 6%;
+	height: 45px;
+	max-width: 335px; //378px x 48px
 	cursor: pointer;
+	margin-left: -9px;
+	margin-bottom: $base-spacing-unit/2;
 }
 
 .nutritional .accordion__content, 
 .ingredients .accordion__content {
 	font-family: 'Montserrat', sans-serif;
-	padding-top: $base-spacing-unit;
+	//padding-top: $base-spacing-unit;
 	//max-width: 335px; 
 	margin: 0 auto;
+	margin-bottom: $base-spacing-unit;
 	overflow: hidden;
 }
 
