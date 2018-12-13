@@ -1296,7 +1296,8 @@ span.product__weight {
   flex-basis: 100%; }
   @media screen and (min-width: 1024px) {
     .product__column.column-second {
-      flex-basis: 40%; } }
+      flex-basis: 40%;
+      padding: 0 12px; } }
 
 .product__column.column-second {
   display: flex;

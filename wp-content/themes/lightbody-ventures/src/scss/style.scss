@@ -1682,6 +1682,7 @@ span.product__weight {
 
 	@media screen and (min-width: $desk) {
 		flex-basis: 40%;
+		padding: 0 $base-spacing-unit/2;
 	}
 }
 
