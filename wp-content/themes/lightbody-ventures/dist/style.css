@@ -375,16 +375,19 @@ body .owl-theme .owl-dots .owl-dot.active span {
   left: 0;
   right: 0;
   background-color: transparent;
+  background-image: url(./assets/images/hero-background.png);
   background-size: cover;
-  background-image: url(./assets/images/hero-background.png); }
+  z-index: 0; }
 
 .hero__title--page {
+  position: relative;
   font-size: 20px;
   font-weight: 500;
   margin-top: 0;
   margin-bottom: 36px; }
 
 .hero__title {
+  position: relative;
   font-weight: 600;
   text-transform: none;
   max-width: 800px;
@@ -393,6 +396,7 @@ body .owl-theme .owl-dots .owl-dot.active span {
   font-size: 30px; }
 
 .hero__desc {
+  position: relative;
   margin-bottom: 24px;
   max-width: 800px;
   margin: 0 auto;
@@ -403,6 +407,8 @@ body .owl-theme .owl-dots .owl-dot.active span {
   margin-bottom: 24px; }
 
 .wrapper--hero {
+  position: relative;
+  z-index: 1;
   max-width: 768px; }
 
 .hero__desc {
@@ -1191,12 +1197,20 @@ span.ui-button.ui-selectmenu-button.ui-selectmenu-button-open {
 .disney table tr:nth-child(odd) {
   background-color: #a2c51b; }
 
+.disney .hero {
+  height: auto;
+  padding-bottom: 10%; }
+  @media screen and (min-width: 1100px) {
+    .disney .hero {
+      padding-bottom: 96px; } }
+
 .disney .hero:after {
-  background-size: 100% auto;
-  background-position: 50%;
-  background-repeat: no-repeat; }
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-size: contain; }
   @media screen and (min-width: 1100px) {
     .disney .hero:after {
+      background-position: 50% 0;
       background-size: 1100px auto; } }
 
 .disney .scroll-down {
