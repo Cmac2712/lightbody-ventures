@@ -20,7 +20,7 @@ $query = new WP_Query( $args ); ?>
 		<li class="products__product">
 			<a href="<?php echo get_the_permalink(); ?>">
 				<div class="product__image">
-					<img src="<?php echo get_field('product_thumbnail')['url']; ?>" alt="">
+					<img src="<?php echo get_field('product_thumbnail') ? get_field('product_thumbnail')['url'] : get_field('product_image')['url']; ?>" alt="">
 				</div>
 				<h2 class="product__title"><?php echo get_field('product_name'); ?></h2>
 				<span class="product__weight"><?php echo get_field('product_weight'); ?></span>
