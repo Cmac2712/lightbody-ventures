@@ -21,7 +21,7 @@
 			<a class="work-item hover-expand" href="<?php echo get_sub_field('disney_kitchen_page_link'); ?>" style="background-image: url(<?php echo get_sub_field('disney_kitchen_page_link_image')['url']; ?>);">
 				<div class="work-item__container hover-expand__container">
 				<h3 class="work-item__title hover-expand__title"><?php echo get_sub_field('page_link_title'); ?></h3>
-					<p class="work-item__desc">Item Description</p>
+					<p class="work-item__desc"></p>
 					<span class="find-out-more">Find Out More &rarr;</span>
 				</div>
 			</a>

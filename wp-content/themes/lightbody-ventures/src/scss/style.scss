@@ -1761,6 +1761,10 @@ span.product__weight {
 	margin-top: 0;
 }
 
+.product__description p:empty {
+	display: none;
+}
+
 .nutritional .accordion__link, 
 .ingredients .accordion__link {
 	background-size: 100% auto;
