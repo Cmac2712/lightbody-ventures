@@ -223,7 +223,9 @@ function display_featured_posts ($title = '')
 	$args = array(
 		'post_type' => 'page', 
 		'meta_key' => 'show_in_homepage', 
-		'meta_value' => 1
+		'meta_value' => 1, 
+		'orderby' => 'menu_order', 
+		'order' => 'ASC'
 	);
 
 	$string = '';
