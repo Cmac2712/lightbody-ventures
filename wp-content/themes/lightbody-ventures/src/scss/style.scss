@@ -1825,6 +1825,22 @@ span.product__weight {
 }
 
 /**
+ * 404
+ */
+
+.error-404 {
+	display: flex;
+	justify-content: center;
+	margin-bottom: $base-spacing-unit;
+}
+
+.error-404 .page-header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+/**
  * HELPERS
  */
 

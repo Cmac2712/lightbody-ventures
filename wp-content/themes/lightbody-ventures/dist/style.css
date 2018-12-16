@@ -1401,6 +1401,19 @@ span.product__weight {
   width: 100%; }
 
 /**
+ * 404
+ */
+.error-404 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px; }
+
+.error-404 .page-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+/**
  * HELPERS
  */
 .aligncenter {
