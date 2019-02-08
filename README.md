@@ -1,4 +1,4 @@
-## Lightbody Ventures Wordpres Theme
+## Lightbody Ventures Wordpress Theme
 
 ![Lightbody Ventures](https://raw.githubusercontent.com/Cmac2712/lightbody-ventures/master/wp-content/themes/lightbody-ventures/dist/assets/images/logo.png)
 
