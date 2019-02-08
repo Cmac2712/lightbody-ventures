@@ -1,6 +1,6 @@
 ## Lightbody Ventures Wordpres Theme
 
-![Lightbody Ventures](https://raw.githubusercontent.com/Cmac2712/lightbody-ventures/master/wp-content/themes/lightbody-ventures/dist/assets/images/logo.svg)
+![Lightbody Ventures](https://raw.githubusercontent.com/Cmac2712/lightbody-ventures/master/wp-content/themes/lightbody-ventures/dist/assets/images/logo.png)
 
 Wordpress theme built for a Glasgow-based agency.
 
